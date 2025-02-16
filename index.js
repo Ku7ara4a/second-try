@@ -32,7 +32,6 @@ app.post('/user/create', (req, res) => {
 })
 
 let search
-
 function checkID(req, res, next){
     if (users.find(user => user.id === req.body.id)){
         search = users.find(user => user.id === req.body.id)
